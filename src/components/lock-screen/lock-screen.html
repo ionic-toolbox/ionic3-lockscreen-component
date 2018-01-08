@@ -1,0 +1,73 @@
+<div>
+  <ion-grid class="passcode">
+    <ion-row>
+      <ion-col class="code" *ngFor="let index of [1,2,3,4]" [ngClass]="{'empty': passCode.length < index}">
+        <div class="code-content"></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid >
+  <ion-grid class="numpad">
+    <ion-row>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(1, 'digit')">
+          1
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(2, 'digit')">
+          2
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(3, 'digit')">
+          3
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(4, 'digit')">
+          4
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(5, 'digit')">
+          5
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(6, 'digit')">
+          6
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(7, 'digit')">
+          7
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(8, 'digit')">
+          8
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(9, 'digit')">
+          9
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(0, 'clear')">
+          C
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(0, 'digit')">
+          0
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button round outline block color="primary" (tap)="type(0, 'backspace')">
+            <ion-icon name="backspace"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

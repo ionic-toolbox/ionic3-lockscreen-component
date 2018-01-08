@@ -1,0 +1,57 @@
+lock-screen {
+    .passcode{
+        /*&:empty{
+            margin: 50px;
+        }
+
+        margin-bottom: -36px;
+        margin-top: -10px;
+        text-align: center;
+        font-size: 80px;
+        -webkit-text-security: disc;
+        */
+
+        
+    }
+
+    .grid{
+        &.passcode{
+            padding: 40px 70px 10px 70px;
+
+            .code{
+                &:not(.empty){
+                    .code-content{
+                        background-color: color($colors, primary);
+                    }
+                }
+
+                .code-content{
+                    border: 2px solid color($colors, primary);
+                    width: 25px;
+                    margin: 0 auto;
+                    height: 25px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        &.numpad{
+            padding: 40px;
+    
+            .row{
+                .col{
+                    padding: 10px 15px;
+            
+                    button{
+                        width: 60px;
+                        height: 60px;
+                        display: block;
+                        margin: 0 auto;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
